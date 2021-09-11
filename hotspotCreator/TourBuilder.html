@@ -1,0 +1,429 @@
+<!DOCTYPE HTML>
+<html style="background-color:#1c1c1c">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotspot creator </title>
+    <link rel="stylesheet" href="../libs/pannellum/pannellum.css"/>
+    <script type="text/javascript" src="../libs/pannellum/pannellum.min.js"></script>
+    <style>
+        #panorama {
+            width: 800px;
+            height: 400px;
+            float: left;
+            margin-right: 10px;
+        }
+
+        p, legend {
+            color: white;
+        }
+
+        /* Dropdown Button */
+        .dropbtn {
+            background-color: #3498DB;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Dropdown button on hover & focus */
+        .dropbtn:hover, .dropbtn:focus {
+            background-color: #2980B9;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            overflow-x: visible;
+            min-width: 300px;
+            max-height: 400px;
+            overflow-y: scroll;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd
+        }
+
+        /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+        .show {
+            display: block;
+        }
+
+        #config {
+            float: bottom;
+            width: 60%;
+            height: 90%;
+            position: center;
+            background-color: #343232;
+            color: #f1f1f1
+        }
+    </style>
+</head>
+<body>
+
+<div id="panorama"></div>
+<div id="input">
+    <fieldset>
+
+        <legend>Scene paths:</legend>
+        <textarea name="message" id="pathInput" rows="5" cols="30"></textarea>
+        <input type="submit" value="Submit" onclick="applyPath()">
+        <legend>Load Scenes:</legend>
+        <textarea name="message" id="configInput" rows="5" cols="30"></textarea>
+        <input type="submit" value="Submit" onclick="applyConfig()">
+        <div class="dropdown">
+            <button onclick="toggleDropdown()" class="dropbtn">Scenes</button>
+            <div id="myDropdown" class="dropdown-content">
+            </div>
+        </div>
+
+    </fieldset>
+</div>
+
+<p>J=Jump Point</p>
+<p>I=Info Point</p>
+<p>K=Photo Point</p>
+<p>L=Video Point</p>
+<textarea readonly rows="2" cols="25" id="horizon"></textarea>
+<input type="button" value="Copy" onclick="copy('horizon')">
+<p></p>
+
+<textarea id="config" readonly rows="25"></textarea>
+<input type="button" value="Copy" onclick="copy('config')">
+<script>
+    let tourConfig = pannellum.viewer('panorama', {
+        "default": {
+            "autoLoad": true,
+            "hfov": 120,
+            "disableKeyboardCtrl": true,
+            "hotSpotDebug": true,
+            "basePath": "../pictures/",
+            "firstScene": "scene",
+            "horizonRoll": 0,
+            "horizonPitch": 0,
+            "test": 1,
+            "map": [
+                {
+                    'href': '',
+                    'type': 'image',
+
+                    "map": [{
+                        shape: "rect",
+                        cords: "486,424,600,546",
+                        customFunc: 'lightbox.close()'
+                    }]
+                },
+            ],
+        },
+        "scenes": {
+            "scene": {
+                "title": "",
+                "pitch": 02,
+                "yaw": 0,
+                "horizonRoll": 0,
+                "horizonPitch": 0,
+                "type": "equirectangular",
+                "panorama": "https://i.imgur.com/8aLbSxK.png",
+                "hotSpots": [],
+                "gbf": 1
+            },
+        },
+    });
+
+    window.onload = function () {
+        document.getElementsByClassName("pnlm-panorama-info")[0].style = "display:none;"
+        document.getElementById("panorama").addEventListener("keypress", onKeyPress)
+        //document.getElementById("pathInput").addEventListener("key", applyPath)
+        //document.getElementById("titleInput").addEventListener("keypress", applyPath)
+        let configOutput = document.getElementById("config")
+        let config = {
+            "default": {
+                "firstScene": "room22",
+                "sceneFadeDuration": 1000,
+                "autoLoad": false,
+                "showFullscreenCtrl": false,
+                "compass": false,
+                "hfov": 120,
+                "map": [
+                    {
+                        'href': '',
+                        'type': 'image',
+
+                        "map": [{
+                            shape: "rect",
+                            cords: "486,424,600,546",
+                            customFunc: 'lightbox.close()'
+                        }]
+                    },
+                ],
+
+            },
+            "scenes": {}
+        }
+
+        setInterval(function () {
+            configOutput.innerHTML = JSON.stringify(tourConfig.getConfig()["scenes"], null, 4)
+            document.getElementById("horizon").innerHTML = `"horizonRoll": ${tourConfig.getHorizonRoll().toFixed(1)},\n"horizonPitch": ${tourConfig.getHorizonPitch().toFixed(1)},`
+        }, 300)
+
+    };
+
+
+    function createCustomHotspot(hotSpotDiv, args) {
+        let type = args[1]
+        hotSpotDiv.classList.add('custom-tooltip');
+        const imageDiv = document.createElement('img');
+        imageDiv.setAttribute('width', '25');
+        imageDiv.setAttribute('height', '25');
+        if (type === "pic") {
+            imageDiv.setAttribute('src', 'https://img.icons8.com/material-sharp/344/stack-of-photos.png') // https://img.icons8.com/ios/1600/circled-up-filled.png
+        } else if (type === "vid") {
+            imageDiv.setAttribute('src', 'https://img.icons8.com/material-outlined/72/video.png')
+        }
+        hotSpotDiv.appendChild(imageDiv);
+    }
+
+    function loadViewerScene(id) {
+        tourConfig.loadScene(id)
+
+    }
+
+    function applyPath() {
+
+        let scenePaths = document.getElementById("pathInput").value.split("\n");
+        for (let i = 0; i < scenePaths.length; i++) {
+            let [path, ...title] = scenePaths[i].split(" ")
+            if (title.length === 0) {
+                title = [path.split(".")[0]]
+            }
+            tourConfig.addScene(title, {
+                "title": title.join(" "),
+                "pitch": 0,
+                "yaw": 0,
+                "type": "equirectangular",
+                "mapCoords": {x: 0, y: 0},
+
+                "panorama": path,
+                "hotSpots": []
+            });
+
+
+        }
+
+        addSceneList()
+
+    }
+
+    function addSceneList() {
+        let scenes = tourConfig.getConfig()["scenes"];
+        let scenesKeys = Object.keys(scenes);
+        for (let i = 0; i < scenesKeys.length; i++) {
+            let title = scenes[scenesKeys[i]].title;
+            let path = scenes[scenesKeys[i]].panorama;
+            let dropdownmenu = document.getElementById("myDropdown")
+            let node = document.createElement("a")
+            node.setAttribute("onclick", `loadViewerScene('${title}')`)
+            node.innerText = title
+            dropdownmenu.appendChild(node)
+        }
+
+    }
+
+    let hotspots = []
+
+    function onKeyPress(e) {
+        let pitch = tourConfig.getPitch()
+        let yaw = tourConfig.getYaw()
+        switch (e.code) {
+            case "KeyD":
+                tourConfig.setHorizonPitch(tourConfig.getHorizonPitch() + 0.2)
+                break;
+            case "KeyA":
+
+                tourConfig.setHorizonPitch(tourConfig.getHorizonPitch() - 0.2)
+                break;
+            case "KeyW":
+
+                tourConfig.setHorizonRoll(tourConfig.getHorizonRoll() + 0.2)
+                break;
+            case "KeyS":
+                tourConfig.setHorizonRoll(tourConfig.getHorizonRoll() - 0.2)
+
+                break;
+
+            case "KeyI":
+                // I key#
+                //info point
+                let infoText = prompt("Enter  Text for Infoscreen")
+                if (infoText != null && infoText !== "") {
+                    console.log(infoText)
+                    tourConfig.addHotSpot(
+                        {
+                            "pitch": pitch,
+                            "yaw": yaw,
+                            "type": "info",
+                            "text": infoText
+                        }, tourConfig.getScene()
+                    )
+                }
+                break
+            case "KeyJ":
+                //j
+                //jump point
+                let jumpPoint = prompt("Enter  Scene ID")
+
+
+                //$("#myDialog").dialog("open");
+
+                if (jumpPoint != null && jumpPoint !== "") {
+                    tourConfig.addHotSpot({
+                        "pitch": pitch,
+                        "yaw": yaw,
+                        "targetPitch": "same",
+                        "targetYaw": "same",
+                        "type": "scene",
+                        "text": "",
+                        "sceneId": jumpPoint
+                    }, tourConfig.getScene())
+                }
+                break
+            case "KeyK":
+                //k
+                //photo point
+                let photoAlbum = prompt("Enter Album Name and Photo Index")
+                if (photoAlbum != null && photoAlbum !== "") {
+                    tourConfig.addHotSpot({
+                        "pitch": pitch,
+                        "yaw": yaw,
+                        "cssClass": "custom-hotspot",
+                        "createTooltipFunc": createCustomHotspot,
+                        "createTooltipArgs": ["", "pic"],
+                        "clickHandlerFunc": openGallery,
+                        "clickHandlerArgs": 1,
+                        "gallery": [
+                            {
+                                'href': '',
+                                'type': 'image',
+                            },
+
+                        ]
+                    }, tourConfig.getScene())
+                }
+                break;
+            case "KeyL":
+                //l
+                //video point
+                let videoAlbum = prompt("Enter Album Name and Video Index")
+                if (videoAlbum != null && videoAlbum !== "") {
+                    tourConfig.addHotSpot({
+                        "pitch": pitch,
+                        "yaw": yaw,
+                        "cssClass": "custom-hotspot",
+                        "createTooltipFunc": createCustomHotspot,
+                        "createTooltipArgs": ["", "vid"],
+                        "clickHandlerFunc": openGallery,
+                        "clickHandlerArgs": 1,
+                        "gallery": [
+                            {
+                                'href': '',
+                                'type': 'video',
+                            },
+                        ]
+                    }, tourConfig.getScene())
+                }
+                break
+            case "Enter":
+                console.log('"x":' + JSON.stringify({
+                    "title": "Flur",
+                    "pitch": 0,
+                    "yaw": 0,
+                    "horizonRoll": tourConfig.getHorizonRoll(),
+                    "horizonPitch": tourConfig.getHorizonPitch(),
+                    "type": "equirectangular",
+                    "panorama": path,
+                    "hotSpots": hotspots
+                }) + ",")
+                console.log(JSON.stringify(hotspots).slice(1, -1))
+                break
+        }
+    }
+
+    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+    function toggleDropdown() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+
+    function copy(id) {
+        document.querySelector("#"+id).select();
+        document.execCommand("copy");
+    }
+
+    function applyConfig() {
+        tourConfig = pannellum.viewer('panorama', {
+            "default": {
+                "autoLoad": true,
+                "hfov": 120,
+                "disableKeyboardCtrl": true,
+                "hotSpotDebug": true,
+                "basePath": "../pictures/",
+                "firstScene": "scene",
+                "test": 1,
+                "map": [
+                    {
+                        'href': '',
+                        'type': 'image',
+
+                        "map": [{
+                            shape: "rect",
+                            cords: "486,424,600,546",
+                            customFunc: 'lightbox.close()'
+                        }]
+                    },
+                ],
+            },
+            "scenes": JSON.parse(document.getElementById("configInput").value)
+
+        });
+        addSceneList()
+    }
+</script>
+
+</body>
+</html>
