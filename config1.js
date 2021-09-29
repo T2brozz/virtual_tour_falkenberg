@@ -46,8 +46,8 @@ let tourConfig = pannellum.viewer('panorama', {
                     "yaw": -128.51598531357888,
                     "cssClass": "custom-hotspot",
                     "createTooltipFunc": createCustomHotspot,
-                    "createTooltipArgs": ["", "pic"],
                     "clickHandlerFunc": openGallery,
+                    "createTooltipArgs": ["", "pic"],
                     "clickHandlerArgs": 1,
                     "gallery": [
                         {

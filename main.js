@@ -45,6 +45,7 @@ function createCustomHotspot(hotSpotDiv, args) {
 
 let lightbox;
 function openGallery(div, args) {
+    console.log(args)
     lightbox = new GLightbox({
         elements: tourConfig.getConfig()["scenes"][tourConfig.getScene()]["hotSpots"][args]["gallery"]
     });

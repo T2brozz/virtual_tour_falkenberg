@@ -205,6 +205,19 @@
         hotSpotDiv.appendChild(imageDiv);
     }
 
+    let lightbox;
+
+    function openGallery(div, args) {
+        lightbox = new GLightbox({
+            elements: tourConfig.getConfig()["scenes"][tourConfig.getScene()]["hotSpots"][args]["gallery"]
+        });
+        lightbox.on('close', (_) => {
+            lightbox.destroy()
+            console.log(lightbox)
+        });
+        lightbox.open();
+    }
+
     function loadViewerScene(id) {
         tourConfig.loadScene(id)
 
@@ -391,7 +404,7 @@ toggle between hiding and showing the dropdown content */
     }
 
     function copy(id) {
-        document.querySelector("#"+id).select();
+        document.querySelector("#" + id).select();
         document.execCommand("copy");
     }
 

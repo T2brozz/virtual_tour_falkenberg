@@ -21,7 +21,7 @@ let tourConfig = pannellum.viewer('panorama', {
         ],
 
     },
-    "scenes":{
+    "scenes": {
         "Floors/d_0": {
             "title": "Floors/d_0",
             "pitch": 0,
@@ -1513,7 +1513,24 @@ let tourConfig = pannellum.viewer('panorama', {
                     "targetYaw": "same",
                     "type": "scene",
                     "text": "",
-                    "sceneId": "Floors/f_0_4"
+                    "sceneId": "Floors/f_0_4",
+                    "div": {}
+                },
+                {
+                    "pitch": -1.897761117148367,
+                    "yaw": -179.28675398765864,
+                    "cssClass": "custom-hotspot",
+                    "createTooltipArgs": ["", "pic"],
+                    "createTooltipFunc": createCustomHotspot,
+                    "clickHandlerFunc": openGallery,
+                    "clickHandlerArgs": 0,
+                    "gallery": [
+                        {
+                            "href": "pictures/CloseUps/R037_1.jpg",
+                            "type": "image"
+                        }
+                    ],
+                    "div": {}
                 }
             ]
         },
@@ -1554,6 +1571,36 @@ let tourConfig = pannellum.viewer('panorama', {
             },
             "panorama": "Rooms/039.jpg",
             "hotSpots": [
+                {
+                    "pitch": 1.521095165865451,
+                    "yaw": -178.37530696850683,
+                    "cssClass": "custom-hotspot",
+                    "createTooltipArgs": ["", "pic"],
+                    "createTooltipFunc": createCustomHotspot,
+                    "clickHandlerFunc": openGallery,
+                    "clickHandlerArgs": 0,
+                    "gallery": [
+                        {
+                            "href": "pictures/CloseUps/R039_1.jpg",
+                            "type": "image"
+                        }
+                    ]
+                },
+                {
+                    "pitch": 0.016168534959140946,
+                    "yaw": -117.1984342730508,
+                    "cssClass": "custom-hotspot",
+                    "createTooltipArgs": ["", "pic"],
+                    "createTooltipFunc": createCustomHotspot,
+                    "clickHandlerFunc": openGallery,
+                    "clickHandlerArgs": 1,
+                    "gallery": [
+                        {
+                            "href": "pictures/CloseUps/R039_2.jpg",
+                            "type": "image"
+                        }
+                    ]
+                },
                 {
                     "pitch": -6.018754351427564,
                     "yaw": 103.66114656445711,
@@ -1627,6 +1674,21 @@ let tourConfig = pannellum.viewer('panorama', {
             "panorama": "Rooms/118.jpg",
             "hotSpots": [
                 {
+                    "pitch": 0.4681323880037502,
+                    "yaw": 53.89374544700934,
+                    "cssClass": "custom-hotspot",
+                    "createTooltipArgs": ["", "pic"],
+                    "createTooltipFunc": createCustomHotspot,
+                    "clickHandlerFunc": openGallery,
+                    "clickHandlerArgs": 0,
+                    "gallery": [
+                        {
+                            "href": "pictures/CloseUps/R118_2.jpg",
+                            "type": "image"
+                        }
+                    ]
+                },
+                {
                     "pitch": -4.303223849231032,
                     "yaw": 20.824559696145457,
                     "targetPitch": "same",
@@ -1634,6 +1696,21 @@ let tourConfig = pannellum.viewer('panorama', {
                     "type": "scene",
                     "text": "",
                     "sceneId": "Floors/f_1_4"
+                },
+                {
+                    "pitch": 1.2910869806471368,
+                    "yaw": 86.949536556417,
+                    "cssClass": "custom-hotspot",
+                    "createTooltipArgs": ["", "pic"],
+                    "createTooltipFunc": createCustomHotspot,
+                    "clickHandlerFunc": openGallery,
+                    "clickHandlerArgs": 1,
+                    "gallery": [
+                        {
+                            "href": "pictures/CloseUps/R118_1.jpg",
+                            "type": "image"
+                        }
+                    ]
                 }
             ]
         },
@@ -1650,6 +1727,21 @@ let tourConfig = pannellum.viewer('panorama', {
             },
             "panorama": "Rooms/119.jpg",
             "hotSpots": [
+                {
+                    "pitch": 1.0217395518796915,
+                    "yaw": 16.942768488137744,
+                    "cssClass": "custom-hotspot",
+                    "createTooltipArgs": ["", "pic"],
+                    "createTooltipFunc": createCustomHotspot,
+                    "clickHandlerFunc": openGallery,
+                    "clickHandlerArgs": 0,
+                    "gallery": [
+                        {
+                            "href": "pictures/CloseUps/R119_1.jpg",
+                            "type": "image"
+                        }
+                    ]
+                },
                 {
                     "pitch": -4.895157925691938,
                     "yaw": -18.2032506152176,
@@ -1675,6 +1767,21 @@ let tourConfig = pannellum.viewer('panorama', {
             "panorama": "Rooms/120.jpg",
             "hotSpots": [
                 {
+                    "pitch": 5.862540143428731,
+                    "yaw": -169.36198427854504,
+                    "cssClass": "custom-hotspot",
+                    "createTooltipArgs": ["", "pic"],
+                    "createTooltipFunc": createCustomHotspot,
+                    "clickHandlerFunc": openGallery,
+                    "clickHandlerArgs": 0,
+                    "gallery": [
+                        {
+                            "href": "pictures/CloseUps/R120_1.jpg",
+                            "type": "image"
+                        }
+                    ]
+                },
+                {
                     "pitch": -6.149387713610973,
                     "yaw": 134.4118326264857,
                     "targetPitch": "same",
@@ -1682,6 +1789,21 @@ let tourConfig = pannellum.viewer('panorama', {
                     "type": "scene",
                     "text": "",
                     "sceneId": "Floors/f_1_5"
+                },
+                {
+                    "pitch": 3.309168115129615,
+                    "yaw": -144.96573860733668,
+                    "cssClass": "custom-hotspot",
+                    "createTooltipArgs": ["", "pic"],
+                    "createTooltipFunc": createCustomHotspot,
+                    "clickHandlerFunc": openGallery,
+                    "clickHandlerArgs": 1,
+                    "gallery": [
+                        {
+                            "href": "pictures/CloseUps/R120_2.jpg",
+                            "type": "image"
+                        }
+                    ]
                 }
             ]
         },
@@ -1699,6 +1821,21 @@ let tourConfig = pannellum.viewer('panorama', {
             "panorama": "Rooms/121.jpg",
             "hotSpots": [
                 {
+                    "pitch": 2.665240627059956,
+                    "yaw": -153.0462983783294,
+                    "cssClass": "custom-hotspot",
+                    "createTooltipArgs": ["", "pic"],
+                    "createTooltipFunc": createCustomHotspot,
+                    "clickHandlerFunc": openGallery,
+                    "clickHandlerArgs": 0,
+                    "gallery": [
+                        {
+                            "href": "pictures/CloseUps/R121_1.jpg",
+                            "type": "image"
+                        }
+                    ]
+                },
+                {
                     "pitch": -6.5770407732584815,
                     "yaw": 80.88796452052975,
                     "targetPitch": "same",
@@ -1706,6 +1843,21 @@ let tourConfig = pannellum.viewer('panorama', {
                     "type": "scene",
                     "text": "",
                     "sceneId": "Floors/f_1_4"
+                },
+                {
+                    "pitch": -5.366608870823887,
+                    "yaw": -163.11604572568268,
+                    "cssClass": "custom-hotspot",
+                    "createTooltipArgs": ["", "pic"],
+                    "createTooltipFunc": createCustomHotspot,
+                    "clickHandlerFunc": openGallery,
+                    "clickHandlerArgs": 1,
+                    "gallery": [
+                        {
+                            "href": "pictures/CloseUps/R121_2.jpg",
+                            "type": "image"
+                        }
+                    ]
                 }
             ]
         },
@@ -1826,6 +1978,21 @@ let tourConfig = pannellum.viewer('panorama', {
                     "type": "scene",
                     "text": "",
                     "sceneId": "Floors/f_3_3"
+                },
+                {
+                    "pitch": -1.1884648850204789,
+                    "yaw": 45.10755137386866,
+                    "cssClass": "custom-hotspot",
+                    "createTooltipArgs": ["", "pic"],
+                    "createTooltipFunc": createCustomHotspot,
+                    "clickHandlerFunc": openGallery,
+                    "clickHandlerArgs": 0,
+                    "gallery": [
+                        {
+                            "href": "pictures/CloseUps/R309_1.jpg",
+                            "type": "image"
+                        }
+                    ]
                 }
             ]
         },
