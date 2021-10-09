@@ -1,0 +1,22 @@
+<map name="floor0-map">
+    <area target="" alt="WAT-RAum" title="Rooms/wat" href="" coords="75,762,223,859" shape="rect">
+    <area target="" alt="Küche" title="Rooms/kueche" href="" coords="541,763,690,862" shape="rect">
+    <area target="" alt="Kunst" title="Rooms/014" href="" coords="947,768,1125,858" shape="rect">
+    <area target="" alt="Cafetaria" title="Rooms/mensa" href="" coords="415,711,413,544,320,542,320,575,248,576,245,715" shape="poly">
+    <area target="" alt="Aula" title="Rooms/aula" href="" coords="771,433,1135,599" shape="rect">
+    <area target="" alt="033" title="Rooms/033" href="" coords="324,440,410,538" shape="rect">
+    <area target="" alt="035" title="Rooms/035" href="" coords="539,435,631,535" shape="rect">
+    <area target="" alt="037" title="Rooms/037" href="" coords="538,321,634,426" shape="rect">
+    <area target="" alt="036" title="Rooms/036" href="" coords="325,334,412,431" shape="rect">
+    <area target="" alt="039" title="Rooms/039" href="" coords="537,192,634,315" shape="rect">
+    <area target="" alt="038" title="Rooms/038" href="" coords="324,249,468,325" shape="rect">
+    <area target="" alt="Flur" title="Floor/f_0_1" href="" coords="768,496,766,645,984,645,984,600,1064,600,1064,717,1028,717,1027,763,541,762,168,762,169,719,411,718,417,374,469,373,468,188,533,192,534,545,641,542,643,496" shape="poly">
+
+    <area target="" alt="Schulhof" title="hof" href="" coords="64,370,182,426" shape="rect">
+    <area target="" alt="Erdgeschoss" title="0og" href="" coords="64,310,184,366" shape="rect">
+    <area target="" alt="1og" title="1og" href="" coords="64,252,184,306" shape="rect">
+    <area target="" alt="2og" title="2og" href="" coords="64,192,182,247" shape="rect">
+    <area target="" alt="3og" title="3og" href="" coords="64,131,184,188" shape="rect">
+    <area target="" alt="trurnhalle" title="trurnhalle" href="" coords="64,57,182,112" shape="rect">
+</map>
+

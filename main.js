@@ -44,6 +44,7 @@ function createCustomHotspot(hotSpotDiv, args) {
 }
 
 let lightbox;
+
 function openGallery(div, args) {
     console.log(args)
     lightbox = new GLightbox({
@@ -128,4 +129,8 @@ function openMap(div, args) {
         });
         lightbox.openAt(floor);
     })
+}
+function mapLoadScene(scene){
+    tourConfig.loadScene(scene);
+    lightbox.close()
 }

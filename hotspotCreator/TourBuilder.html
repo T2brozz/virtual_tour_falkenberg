@@ -431,7 +431,7 @@ toggle between hiding and showing the dropdown content */
                     },
                 ],
             },
-            "scenes": JSON.parse(document.getElementById("configInput").value)
+            "scenes": JSON.parse(document.getElementById("configInput").value.replace("createCustomHotspot", '"').replace("openGallery", '"'))
 
         });
         addSceneList()
