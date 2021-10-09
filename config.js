@@ -9,7 +9,106 @@ let tourConfig = pannellum.viewer('panorama', {
         "hfov": 120,
         "map": [
             {
-                'href': '',
+                'href': 'pictures/Maps/Floor0.png',
+                'type': 'image',
+
+                "map": [
+                    {
+                        shape: "rect",
+                        cords: "75,762,223,859",
+                        customFunc: 'mapLoadScene("Rooms/wat")'
+                    }, {
+                        shape: "rect",
+                        cords: "541,763,690,862",
+                        customFunc: 'mapLoadScene("Rooms/kueche")'
+                    }, {
+                        shape: "rect",
+                        cords: "947,768,1125,858",
+                        customFunc: 'mapLoadScene("Rooms/014")'
+                    }, {
+                        shape: "poly",
+                        cords: "415,711,413,544,320,542,320,575,248,576,245,715",
+                        customFunc: 'mapLoadScene("Rooms/mensa")'
+                    }, {
+                        shape: "rect",
+                        cords: "771,433,1135,599",
+                        customFunc: 'mapLoadScene("Rooms/aula")'
+                    }, {
+                        shape: "rect",
+                        cords: "324,440,410,538",
+                        customFunc: 'mapLoadScene("Rooms/033")'
+                    }, {
+                        shape: "rect",
+                        cords: "539,435,631,535",
+                        customFunc: 'mapLoadScene("Rooms/035")'
+                    }, {
+                        shape: "rect",
+                        cords: "538,321,634,426",
+                        customFunc: 'mapLoadScene("Rooms/037")'
+                    }, {
+                        shape: "rect",
+                        cords: "325,334,412,431",
+                        customFunc: 'mapLoadScene("Rooms/036")'
+                    }, {
+                        shape: "rect",
+                        cords: "537,192,634,315",
+                        customFunc: 'mapLoadScene("Rooms/039")'
+                    }, {
+                        shape: "rect",
+                        cords: "324,249,468,325",
+                        customFunc: 'mapLoadScene("Rooms/038")'
+                    }, {
+                        shape: "poly",
+                        cords: "768,496,766,645,984,645,984,600,1064,600,1064,717,1028,717,1027,763,541,762,168,762,169,719,411,718,417,374,469,373,468,188,533,192,534,545,641,542,643,496",
+                        customFunc: 'mapLoadScene("Floor/f_0_1")'
+                    }, {
+                        shape: "rect",
+                        cords: "64,370,182,426",
+                        customFunc: 'lightbox.goToSlide(4)'
+                    }, {
+                        shape: "rect",
+                        cords: "64,310,184,366",
+                        customFunc: 'lightbox.goToSlide(0)'
+                    }, {
+                        shape: "rect",
+                        cords: "64,252,184,306",
+                        customFunc: 'lightbox.goToSlide(1)'
+                    }, {
+                        shape: "rect",
+                        cords: "64,192,182,247",
+                        customFunc: 'lightbox.goToSlide(2)'
+                    }, {
+                        shape: "rect",
+                        cords: "64,131,184,188",
+                        customFunc: 'lightbox.goToSlide(3)'
+                    }, {
+                        shape: "rect",
+                        cords: "64,57,182,112",
+                        customFunc: 'lightbox.goToSlide(5)'
+                    },]
+            },
+            {
+                'href': 'pictures/Maps/Floor1.png',
+                'type': 'image',
+
+                "map": [{
+                    shape: "rect",
+                    cords: "486,424,600,546",
+                    customFunc: 'lightbox.close()'
+                }]
+            },
+            {
+                'href': 'pictures/Maps/Floor2.png',
+                'type': 'image',
+
+                "map": [{
+                    shape: "rect",
+                    cords: "486,424,600,546",
+                    customFunc: 'lightbox.close()'
+                }]
+            },
+            {
+                'href': 'pictures/Maps/Floor3.png',
                 'type': 'image',
 
                 "map": [{
@@ -28,6 +127,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1,
             "horizonPitch": -1.6,
+            "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -52,6 +152,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 2.2,
             "horizonPitch": -2.6,
+            "floor": 4,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -66,6 +167,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 0.4,
             "horizonPitch": -3.8,
+            "floor": 4,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -80,6 +182,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1.4,
             "horizonPitch": -2,
+            "floor": 4,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -94,6 +197,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 0.6,
             "horizonPitch": -1.8,
+            "floor": 4,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -108,6 +212,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 3,
             "horizonPitch": -3,
+            "floor": 4,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -122,6 +227,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 3.2,
             "horizonPitch": -3.4,
+            "floor": 4,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -136,6 +242,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": -0.6,
             "horizonPitch": -2.8,
+            "floor": 4,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -150,6 +257,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1.6,
             "horizonPitch": -1.6,
+            "floor": 4,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -164,6 +272,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 0.4,
             "horizonPitch": -2.8,
+            "floor": 4,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -178,6 +287,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1.2,
             "horizonPitch": -2,
+            "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -243,6 +353,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 3,
             "horizonPitch": -3,
+            "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -276,6 +387,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1.8,
             "horizonPitch": -2.6,
+            "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -327,6 +439,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 0.8,
             "horizonPitch": -2.6,
+            "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -396,6 +509,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1.6,
             "horizonPitch": -1.2,
+            "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -438,6 +552,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1,
             "horizonPitch": -1.6,
+            "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -471,6 +586,15 @@ let tourConfig = pannellum.viewer('panorama', {
                     "type": "scene",
                     "text": "",
                     "sceneId": "Floors/f_0_10"
+                },
+                {
+                    "pitch": -0.12504788073309037,
+                    "yaw": -13.55141736592816,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Rooms/kueche"
                 }
             ]
         },
@@ -480,6 +604,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1,
             "horizonPitch": -2.8,
+            "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -513,6 +638,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 0,
             "horizonPitch": -1.4,
+            "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -555,6 +681,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 0.2,
             "horizonPitch": -3.2,
+            "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -588,6 +715,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 2.8,
             "horizonPitch": -1.4,
+            "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -630,6 +758,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1.2,
             "horizonPitch": -2.4,
+            "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -663,6 +792,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1.2,
             "horizonPitch": -3.4,
+            "floor": 1,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -723,6 +853,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 0,
             "horizonPitch": -2,
+            "floor": 1,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -747,6 +878,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1,
             "horizonPitch": -3.2,
+            "floor": 1,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -780,6 +912,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 2.6,
             "horizonPitch": -1.6,
+            "floor": 1,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -840,6 +973,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 0.2,
             "horizonPitch": -1,
+            "floor": 1,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -891,6 +1025,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1.6,
             "horizonPitch": -3.2,
+            "floor": 1,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -924,6 +1059,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1.8,
             "horizonPitch": -1.4,
+            "floor": 2,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -975,6 +1111,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1.4,
             "horizonPitch": -2.6,
+            "floor": 2,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -999,6 +1136,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 0.4,
             "horizonPitch": -1.8,
+            "floor": 2,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -1041,6 +1179,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1,
             "horizonPitch": -2.8,
+            "floor": 2,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -1065,6 +1204,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": -0.2,
             "horizonPitch": -1,
+            "floor": 2,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -1098,6 +1238,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 0.8,
             "horizonPitch": -2.4,
+            "floor": 3,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -1140,6 +1281,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 0.6,
             "horizonPitch": -1.6,
+            "floor": 3,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -1182,6 +1324,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1.8,
             "horizonPitch": -1.8,
+            "floor": 3,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -1224,6 +1367,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1.6,
             "horizonPitch": -1.8,
+            "floor": 4,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -1238,6 +1382,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1,
             "horizonPitch": -3.8,
+            "floor": 4,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -1252,6 +1397,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1.4,
             "horizonPitch": -2.4,
+            "floor": 4,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -1266,6 +1412,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1.4,
             "horizonPitch": -3.2,
+            "floor": 4,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -1280,6 +1427,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 0.4,
             "horizonPitch": -1.8,
+            "floor": 4,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -1295,6 +1443,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "type": "equirectangular",
             "horizonRoll": 0.4,
             "horizonPitch": -2.4,
+            "floor": 4,
             "mapCoords": {
                 "x": 0,
                 "y": 0
@@ -1308,13 +1457,25 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1.8,
             "horizonPitch": -2.2,
+            "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
                 "y": 0
             },
             "panorama": "Rooms/kueche.jpg",
-            "hotSpots": []
+            "hotSpots": [
+                {
+                    "pitch": -7.449592931333768,
+                    "yaw": -63.58481364933982,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Floors/f_0_6",
+                    "div": {}
+                }
+            ]
         },
         "Rooms/mensa": {
             "title": "Rooms/mensa",
@@ -1322,6 +1483,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 0.8,
             "horizonPitch": -0.6,
+            "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -1346,6 +1508,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 0,
             "horizonPitch": -2,
+            "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -1379,6 +1542,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 0.6,
             "horizonPitch": -1.8,
+            "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -1403,6 +1567,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 0.6,
             "horizonPitch": -1.2,
+            "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -1427,6 +1592,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1.8,
             "horizonPitch": -1.6,
+            "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -1451,6 +1617,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 0.8,
             "horizonPitch": -2,
+            "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -1475,6 +1642,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 2,
             "horizonPitch": -2.2,
+            "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -1499,6 +1667,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 0.6,
             "horizonPitch": -2,
+            "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -1540,6 +1709,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 2,
             "horizonPitch": -2.4,
+            "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -1564,6 +1734,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1.2,
             "horizonPitch": -1.2,
+            "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -1618,6 +1789,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1.6,
             "horizonPitch": -2.4,
+            "floor": 1,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -1642,6 +1814,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 2.4,
             "horizonPitch": -3,
+            "floor": 1,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -1666,6 +1839,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1,
             "horizonPitch": -3.2,
+            "floor": 1,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -1720,6 +1894,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 0,
             "horizonPitch": -3,
+            "floor": 1,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -1759,6 +1934,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1.4,
             "horizonPitch": -2.2,
+            "floor": 1,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -1813,6 +1989,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1.6,
             "horizonPitch": -2.2,
+            "floor": 1,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -1867,6 +2044,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 2.8,
             "horizonPitch": -2.2,
+            "floor": 1,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -1891,6 +2069,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": -1,
             "horizonPitch": -2.2,
+            "floor": 2,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -1915,6 +2094,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1.2,
             "horizonPitch": -3.8,
+            "floor": 3,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -1939,6 +2119,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 2.2,
             "horizonPitch": -1.6,
+            "floor": 3,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -1963,6 +2144,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 0,
             "horizonPitch": -1.4,
+            "floor": 3,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
@@ -2002,6 +2184,7 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1.8,
             "horizonPitch": -1.6,
+            "floor": 3,
             "type": "equirectangular",
             "mapCoords": {
                 "x": 0,
