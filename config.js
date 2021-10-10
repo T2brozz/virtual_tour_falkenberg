@@ -91,11 +91,69 @@ let tourConfig = pannellum.viewer('panorama', {
                 'href': 'pictures/Maps/Floor1.png',
                 'type': 'image',
 
-                "map": [{
-                    shape: "rect",
-                    cords: "486,424,600,546",
-                    customFunc: 'lightbox.close()'
-                }]
+                "map": [
+                    {
+                        shape: "rect",
+                        cords: "951,823,1122,896",
+                        customFunc: 'mapLoadScene("Rooms/114")'
+                    }, {
+                        shape: "rect",
+                        cords: "455,477,558,600",
+                        customFunc: 'mapLoadScene("Rooms/117")'
+                    }, {
+                        shape: "rect",
+                        cords: "456,349,556,465",
+                        customFunc: 'mapLoadScene("Rooms/118")'
+                    }, {
+                        shape: "rect",
+                        cords: "455,216,557,342",
+                        customFunc: 'mapLoadScene("Rooms/119")'
+                    }, {
+                        shape: "rect",
+                        cords: "454,37,557,207",
+                        customFunc: 'mapLoadScene("Rooms/120")'
+                    }, {
+                        shape: "rect",
+                        cords: "234,348,339,467",
+                        customFunc: 'mapLoadScene("Rooms/122")'
+                    }, {
+                        shape: "rect",
+                        cords: "235,476,339,600",
+                        customFunc: 'mapLoadScene("Rooms/121")'
+                    }, {
+                        shape: "poly",
+                        cords: "152,754,451,753,450,714,495,715,496,752,776,753,775,716,1028,715,1026,755,993,755,991,818,153,813",
+                        customFunc: 'mapLoadScene("Floors/f_1_1")'
+                    }, {
+                        shape: "poly",
+                        cords: "342,123,449,125,448,750,342,749",
+                        customFunc: 'mapLoadScene("Floors/f_1_4")'
+                    },{
+                        shape: "rect",
+                        cords: "48,380,168,434",
+                        customFunc: 'lightbox.goToSlide(4)'
+                    }, {
+                        shape: "rect",
+                        cords: "48,318,168,375",
+                        customFunc: 'lightbox.goToSlide(0)'
+                    }, {
+                        shape: "rect",
+                        cords: "48,261,168,316",
+                        customFunc: 'lightbox.goToSlide(1)'
+                    }, {
+                        shape: "rect",
+                        cords: "48,202,168,256",
+                        customFunc: 'lightbox.goToSlide(2)'
+                    }, {
+                        shape: "rect",
+                        cords: "48,140,168,198",
+                        customFunc: 'lightbox.goToSlide(3)'
+                    }, {
+                        shape: "rect",
+                        cords: "48,66,168,122",
+                        customFunc: 'lightbox.goToSlide(5)'
+                    }
+                ]
             },
             {
                 'href': 'pictures/Maps/Floor2.png',

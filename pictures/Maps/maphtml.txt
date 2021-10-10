@@ -20,3 +20,21 @@
     <area target="" alt="trurnhalle" title="trurnhalle" href="" coords="64,57,182,112" shape="rect">
 </map>
 
+<map name="floor1-map">
+    <area target="" alt="Rooms/114" title="Rooms/114" href="" coords="951,823,1122,896" shape="rect">
+    <area target="" alt="Rooms/117" title="Rooms/117" href="" coords="455,477,558,600" shape="rect">
+    <area target="" alt="Rooms/118" title="Rooms/118" href="" coords="456,349,556,465" shape="rect">
+    <area target="" alt="Rooms/119" title="Rooms/119" href="" coords="455,216,557,342" shape="rect">
+    <area target="" alt="Rooms/120" title="Rooms/120" href="" coords="454,37,557,207" shape="rect">
+    <area target="" alt="Rooms/122" title="Rooms/122" href="" coords="234,348,339,467" shape="rect">
+    <area target="" alt="Rooms/121" title="Rooms/121" href="" coords="235,476,339,600" shape="rect">
+    <area target="" alt="Floors/f_1_1" title="Floors/f_1_1" href="" coords="152,754,451,753,450,714,495,715,496,752,776,753,775,716,1028,715,1026,755,993,755,991,818,153,813" shape="poly">
+    <area target="" alt="Floors/f_1_4" title="Floors/f_1_4" href="" coords="342,123,449,125,448,750,342,749" shape="poly">
+
+       <area target="" alt="lightbox.goToSlide(4)" title="lightbox.goToSlide(4)" href="" coords="48,380,168,434" shape="rect">
+       <area target="" alt="lightbox.goToSlide(0)" title="lightbox.goToSlide(0)" href="" coords="48,318,168,375" shape="rect">
+       <area target="" alt="lightbox.goToSlide(1)" title="lightbox.goToSlide(1)" href="" coords="48,261,168,316" shape="rect">
+       <area target="" alt="lightbox.goToSlide(2)" title="lightbox.goToSlide(2)" href="" coords="48,202,168,256" shape="rect">
+       <area target="" alt="lightbox.goToSlide(3)" title="lightbox.goToSlide(3)" href="" coords="48,140,168,198" shape="rect">
+       <area target="" alt="lightbox.goToSlide(5)" title="lightbox.goToSlide(5)" href="" coords="48,66,168,122" shape="rect">
+</map>

@@ -1,4 +1,4 @@
-_ = {
+floor0 = {
     "map": [{
         shape: "rect",
         cords: "75,762,223,859",
@@ -75,6 +75,68 @@ _ = {
 
     ]
 }
-_ = {
-    "map": [{}]
+floor1 = {
+    "map": [
+        {
+        shape: "rect",
+        cords: "951,823,1122,896",
+        customFunc: 'mapLoadScene("Rooms/114")'
+    }, {
+        shape: "rect",
+        cords: "455,477,558,600",
+        customFunc: 'mapLoadScene("Rooms/117")'
+    }, {
+        shape: "rect",
+        cords: "456,349,556,465",
+        customFunc: 'mapLoadScene("Rooms/118")'
+    }, {
+        shape: "rect",
+        cords: "455,216,557,342",
+        customFunc: 'mapLoadScene("Rooms/119")'
+    }, {
+        shape: "rect",
+        cords: "454,37,557,207",
+        customFunc: 'mapLoadScene("Rooms/120")'
+    }, {
+        shape: "rect",
+        cords: "234,348,339,467",
+        customFunc: 'mapLoadScene("Rooms/122")'
+    }, {
+        shape: "rect",
+        cords: "235,476,339,600",
+        customFunc: 'mapLoadScene("Rooms/121")'
+    }, {
+        shape: "poly",
+        cords: "152,754,451,753,450,714,495,715,496,752,776,753,775,716,1028,715,1026,755,993,755,991,818,153,813",
+        customFunc: 'mapLoadScene("Floors/f_1_1")'
+    }, {
+        shape: "poly",
+        cords: "342,123,449,125,448,750,342,749",
+        customFunc: 'mapLoadScene("Floors/f_1_4")'
+    },{
+        shape: "rect",
+        cords: "64,370,182,426",
+        customFunc: 'lightbox.goToSlide(4)'
+    }, {
+        shape: "rect",
+        cords: "64,310,184,366",
+        customFunc: 'lightbox.goToSlide(0)'
+    }, {
+        shape: "rect",
+        cords: "64,252,184,306",
+        customFunc: 'lightbox.goToSlide(1)'
+    }, {
+        shape: "rect",
+        cords: "64,192,182,247",
+        customFunc: 'lightbox.goToSlide(2)'
+    }, {
+        shape: "rect",
+        cords: "64,131,184,188",
+        customFunc: 'lightbox.goToSlide(3)'
+    }, {
+        shape: "rect",
+        cords: "64,57,182,112",
+        customFunc: 'lightbox.goToSlide(5)'
+    }
+    ]
 }
