@@ -60,7 +60,7 @@ let tourConfig = pannellum.viewer('panorama', {
                     }, {
                         shape: "poly",
                         cords: "768,496,766,645,984,645,984,600,1064,600,1064,717,1028,717,1027,763,541,762,168,762,169,719,411,718,417,374,469,373,468,188,533,192,534,545,641,542,643,496",
-                        customFunc: 'mapLoadScene("Floor/f_0_1")'
+                        customFunc: 'mapLoadScene("Floors/f_0_1")'
                     }, {
                         shape: "rect",
                         cords: "64,370,182,426",
@@ -159,21 +159,94 @@ let tourConfig = pannellum.viewer('panorama', {
                 'href': 'pictures/Maps/Floor2.png',
                 'type': 'image',
 
-                "map": [{
-                    shape: "rect",
-                    cords: "486,424,600,546",
-                    customFunc: 'lightbox.close()'
-                }]
+                "map": [
+                    {
+                        shape: "poly",
+                        cords: "114,564,520,562,519,535,553,533,555,561,865,560,867,376,1022,375,1025,562,985,562,982,624,112,624,112,602",
+                        customFunc: 'mapLoadScene("Floors/f_2_1")'
+                    },  {
+                        shape: "rect",
+                        cords: "944,732,1149,626",
+                        customFunc: 'mapLoadScene("Rooms/212")'
+                    },{
+                        shape: "rect",
+                        cords: "70,399,189,454",
+                        customFunc: 'lightbox.goToSlide(4)'
+                    }, {
+                        shape: "rect",
+                        cords: "70,339,189,395",
+                        customFunc: 'lightbox.goToSlide(0)'
+                    }, {
+                        shape: "rect",
+                        cords: "70,282,189,335",
+                        customFunc: 'lightbox.goToSlide(1)'
+                    }, {
+                        shape: "rect",
+                        cords: "70,222,189,277",
+                        customFunc: 'lightbox.goToSlide(2)'
+                    }, {
+                        shape: "rect",
+                        cords: "70,159,188,219",
+                        customFunc: 'lightbox.goToSlide(3)'
+                    }, {
+                        shape: "rect",
+                        cords: "70,85,189,142",
+                        customFunc: 'lightbox.goToSlide(5)'
+                    }
+
+                ]
             },
             {
                 'href': 'pictures/Maps/Floor3.png',
                 'type': 'image',
 
-                "map": [{
-                    shape: "rect",
-                    cords: "486,424,600,546",
-                    customFunc: 'lightbox.close()'
-                }]
+                "map": [
+                    {
+                        shape: "rect",
+                        cords: "21,548,188,659",
+                        customFunc: 'mapLoadScene("Rooms/303")'
+                    }, {
+                        shape: "rect",
+                        cords: "277,546,426,659",
+                        customFunc: 'mapLoadScene("Rooms/305")'
+                    },{
+                        shape: "rect",
+                        cords: "513,547,712,659",
+                        customFunc: 'mapLoadScene("Rooms/306")'
+                    },{
+                        shape: "rect",
+                        cords: "950,547,1151,658",
+                        customFunc: 'mapLoadScene("Rooms/309")'
+                    },{
+                        shape: "poly",
+                        cords: "124,484,124,542,995,546,997,485,1022,483,1022,426,937,430,935,484,579,483,578,453,539,454,539,485",
+                        customFunc: 'mapLoadScene("Floors/f_3_1")'
+                    },{
+                        shape: "rect",
+                        cords: "183,440,63,384",
+                        customFunc: 'lightbox.goToSlide(4)'
+                    }, {
+                        shape: "rect",
+                        cords: "183,380,63,325",
+                        customFunc: 'lightbox.goToSlide(0)'
+                    }, {
+                        shape: "rect",
+                        cords: "183,321,63,267",
+                        customFunc: 'lightbox.goToSlide(1)'
+                    }, {
+                        shape: "rect",
+                        cords: "183,263,63,208",
+                        customFunc: 'lightbox.goToSlide(2)'
+                    }, {
+                        shape: "rect",
+                        cords: "183,202,63,143",
+                        customFunc: 'lightbox.goToSlide(3)'
+                    }, {
+                        shape: "rect",
+                        cords: "183,127,63,72",
+                        customFunc: 'lightbox.goToSlide(5)'
+                    }
+                ]
             },
         ],
 
