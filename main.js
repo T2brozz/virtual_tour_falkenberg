@@ -100,9 +100,8 @@ function getBase64Image(imageSrc, coords, _callback) {
     }
 }
 
-
 function openMap(div, args) {
-    let mapElements = tourConfig.getConfig()["default"]["map"]
+    let mapElements = JSON.parse(JSON.stringify(tourConfig.getConfig()["default"]["map"]));
     let floor = tourConfig.getConfig()["scenes"][tourConfig.getScene()]["floor"]
     let coords = tourConfig.getConfig()["scenes"][tourConfig.getScene()]["mapCoords"]
     getBase64Image(mapElements[floor]["href"], coords, function (manipulatedImage) {
@@ -112,7 +111,7 @@ function openMap(div, args) {
             draggable: false,
             touchNavigation: false,
             keyboardNavigation: false,
-            elements: tourConfig.getConfig()["default"]["map"]
+            elements: mapElements
         });
         lightbox.on('close', (_) => {
             lightbox.destroy()

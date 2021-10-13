@@ -128,7 +128,7 @@ let tourConfig = pannellum.viewer('panorama', {
                         shape: "poly",
                         cords: "342,123,449,125,448,750,342,749",
                         customFunc: 'mapLoadScene("Floors/f_1_4")'
-                    },{
+                    }, {
                         shape: "rect",
                         cords: "48,380,168,434",
                         customFunc: 'lightbox.goToSlide(4)'
@@ -164,11 +164,11 @@ let tourConfig = pannellum.viewer('panorama', {
                         shape: "poly",
                         cords: "114,564,520,562,519,535,553,533,555,561,865,560,867,376,1022,375,1025,562,985,562,982,624,112,624,112,602",
                         customFunc: 'mapLoadScene("Floors/f_2_1")'
-                    },  {
+                    }, {
                         shape: "rect",
                         cords: "944,732,1149,626",
                         customFunc: 'mapLoadScene("Rooms/212")'
-                    },{
+                    }, {
                         shape: "rect",
                         cords: "70,399,189,454",
                         customFunc: 'lightbox.goToSlide(4)'
@@ -209,19 +209,19 @@ let tourConfig = pannellum.viewer('panorama', {
                         shape: "rect",
                         cords: "277,546,426,659",
                         customFunc: 'mapLoadScene("Rooms/305")'
-                    },{
+                    }, {
                         shape: "rect",
                         cords: "513,547,712,659",
                         customFunc: 'mapLoadScene("Rooms/306")'
-                    },{
+                    }, {
                         shape: "rect",
                         cords: "950,547,1151,658",
                         customFunc: 'mapLoadScene("Rooms/309")'
-                    },{
+                    }, {
                         shape: "poly",
                         cords: "124,484,124,542,995,546,997,485,1022,483,1022,426,937,430,935,484,579,483,578,453,539,454,539,485",
                         customFunc: 'mapLoadScene("Floors/f_3_1")'
-                    },{
+                    }, {
                         shape: "rect",
                         cords: "183,440,63,384",
                         customFunc: 'lightbox.goToSlide(4)'
@@ -421,8 +421,8 @@ let tourConfig = pannellum.viewer('panorama', {
             "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 696,
+                "y": 572
             },
             "panorama": "Floors/f_0_1.jpg",
             "hotSpots": [
@@ -487,8 +487,8 @@ let tourConfig = pannellum.viewer('panorama', {
             "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 580,
+                "y": 600
             },
             "panorama": "Floors/f_0_2.jpg",
             "hotSpots": [
@@ -521,8 +521,8 @@ let tourConfig = pannellum.viewer('panorama', {
             "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 511,
+                "y": 651
             },
             "panorama": "Floors/f_0_3.jpg",
             "hotSpots": [
@@ -573,8 +573,8 @@ let tourConfig = pannellum.viewer('panorama', {
             "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 493,
+                "y": 433
             },
             "panorama": "Floors/f_0_4.jpg",
             "hotSpots": [
@@ -643,8 +643,8 @@ let tourConfig = pannellum.viewer('panorama', {
             "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 500,
+                "y": 300
             },
             "panorama": "Floors/f_0_5.jpg",
             "hotSpots": [
@@ -686,8 +686,8 @@ let tourConfig = pannellum.viewer('panorama', {
             "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 722,
+                "y": 737
             },
             "panorama": "Floors/f_0_6.jpg",
             "hotSpots": [
@@ -738,8 +738,8 @@ let tourConfig = pannellum.viewer('panorama', {
             "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 284,
+                "y": 737
             },
             "panorama": "Floors/f_0_7.jpg",
             "hotSpots": [
@@ -772,8 +772,8 @@ let tourConfig = pannellum.viewer('panorama', {
             "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 877,
+                "y": 679
             },
             "panorama": "Floors/f_0_8.jpg",
             "hotSpots": [
@@ -815,8 +815,8 @@ let tourConfig = pannellum.viewer('panorama', {
             "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 1028,
+                "y": 679
             },
             "panorama": "Floors/f_0_9.jpg",
             "hotSpots": [
@@ -849,8 +849,8 @@ let tourConfig = pannellum.viewer('panorama', {
             "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 909,
+                "y": 737
             },
             "panorama": "Floors/f_0_10.jpg",
             "hotSpots": [
@@ -892,8 +892,8 @@ let tourConfig = pannellum.viewer('panorama', {
             "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 490,
+                "y": 840
             },
             "panorama": "Floors/f_0-5_1.jpg",
             "hotSpots": [
@@ -1591,8 +1591,8 @@ let tourConfig = pannellum.viewer('panorama', {
             "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 616,
+                "y": 800
             },
             "panorama": "Rooms/kueche.jpg",
             "hotSpots": [
@@ -1617,8 +1617,8 @@ let tourConfig = pannellum.viewer('panorama', {
             "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 342,
+                "y": 616
             },
             "panorama": "Rooms/mensa.jpg",
             "hotSpots": [
@@ -1642,8 +1642,8 @@ let tourConfig = pannellum.viewer('panorama', {
             "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 942,
+                "y": 492
             },
             "panorama": "Rooms/aula.jpg",
             "hotSpots": [
@@ -1676,8 +1676,8 @@ let tourConfig = pannellum.viewer('panorama', {
             "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 133,
+                "y": 811
             },
             "panorama": "Rooms/wat.jpg",
             "hotSpots": [
@@ -1701,8 +1701,8 @@ let tourConfig = pannellum.viewer('panorama', {
             "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 363,
+                "y": 415
             },
             "panorama": "Rooms/036.jpg",
             "hotSpots": [
@@ -1726,8 +1726,8 @@ let tourConfig = pannellum.viewer('panorama', {
             "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 989,
+                "y": 802
             },
             "panorama": "Rooms/014.jpg",
             "hotSpots": [
@@ -1751,8 +1751,8 @@ let tourConfig = pannellum.viewer('panorama', {
             "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 361,
+                "y": 478
             },
             "panorama": "Rooms/033.jpg",
             "hotSpots": [
@@ -1776,8 +1776,8 @@ let tourConfig = pannellum.viewer('panorama', {
             "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 586,
+                "y": 482
             },
             "panorama": "Rooms/035.jpg",
             "hotSpots": [
@@ -1801,8 +1801,8 @@ let tourConfig = pannellum.viewer('panorama', {
             "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 591,
+                "y": 373
             },
             "panorama": "Rooms/037.jpg",
             "hotSpots": [
@@ -1843,8 +1843,8 @@ let tourConfig = pannellum.viewer('panorama', {
             "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 438,
+                "y": 288
             },
             "panorama": "Rooms/038.jpg",
             "hotSpots": [
@@ -1868,8 +1868,8 @@ let tourConfig = pannellum.viewer('panorama', {
             "floor": 0,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 590,
+                "y": 262
             },
             "panorama": "Rooms/039.jpg",
             "hotSpots": [
