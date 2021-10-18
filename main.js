@@ -83,17 +83,19 @@ function getBase64Image(imageSrc, coords, _callback) {
     // Create an empty canvas element
     let canvas = document.createElement("canvas");
     let img = new Image();
+    let offset =48 // size of here i am icon
     img.src = imageSrc;
     img.onload = function () {
         canvas.width = img.width;
         canvas.height = img.height;
+        console.log(canvas.height,canvas.width)
         let ctx = canvas.getContext("2d");
         ctx.drawImage(img, 0, 0);
         //Image manipulation
         let markerPic = new Image();
         markerPic.src = "pictures/icons/here_i_am.png";
         markerPic.onload = function () {
-            ctx.drawImage(markerPic, coords.x, coords.y);
+            ctx.drawImage(markerPic, coords.x-offset/2, coords.y-offset);
             let imageBase64 = canvas.toDataURL("image/png");
             _callback(imageBase64);
         }
