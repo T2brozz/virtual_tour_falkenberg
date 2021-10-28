@@ -228,3 +228,52 @@ floor3 = {
         }
     ]
 }
+floorout = {
+    "map": [
+        {
+            shape: "poly",
+            cords: "828,642,1012,639,1012,613,1103,612,1105,828,1017,829,1016,792,826,789",
+            customFunc: 'mapLoadScene("Floors/d_0")'
+        }, {
+            shape: "poly",
+            cords: "663,440,662,388,900,389,992,386,1111,450,1104,471,1050,457,1050,611,1014,612,1011,524,813,520,813,490,738,488,736,439",
+            customFunc: 'mapLoadScene("Floors/d_3")'
+        },{
+            shape: "poly",
+            cords: "659,797,662,387,189,388,187,438,224,437,381,434,381,599,222,599,222,434,188,437,187,795,279,795",
+            customFunc: 'mapLoadScene("Floors/d_8")'
+        },{
+            shape: "poly",
+            cords: "188,378,987,371,1146,99,1144,88,187,89",
+            customFunc: 'mapLoadScene("Floors/d_9")'
+        },{
+            shape: "poly",
+            cords: "673,449,728,448,731,495,799,497,804,530,999,534,1002,629,818,629,816,788,671,789",
+            customFunc: 'mapLoadScene("Floors/f_0_1")'
+        },{
+            shape: "rect",
+            cords: "31,392,150,448",
+            customFunc: 'lightbox.goToSlide(4)'
+        },{
+            shape: "rect",
+            cords: "31,333,150,389",
+            customFunc: 'lightbox.goToSlide(0)'
+        },{
+            shape: "rect",
+            cords: "31,274,150,328",
+            customFunc: 'lightbox.goToSlide(1)'
+        },{
+            shape: "rect",
+            cords: "31,215,150,268",
+            customFunc: 'lightbox.goToSlide(2)'
+        },{
+            shape: "rect",
+            cords: "31,152,150,212",
+            customFunc: 'lightbox.goToSlide(3)'
+        },{
+            shape: "rect",
+            cords: "31,79,150,133",
+            customFunc: 'lightbox.goToSlide(5)'
+        },
+    ]
+}

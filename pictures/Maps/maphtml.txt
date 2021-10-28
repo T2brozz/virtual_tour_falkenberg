@@ -64,3 +64,17 @@
     <area target="" alt="lightbox.goToSlide(3)" title="lightbox.goToSlide(3)" href="" coords="182,202,63,143" shape="rect">
     <area target="" alt="lightbox.goToSlide(5)" title="lightbox.goToSlide(5)" href="" coords="181,127,63,72" shape="rect">
 </map>
+
+<map name="floorout-map">
+    <area target="" alt="Floors/d_0" title="Floors/d_0" href="" coords="828,642,1012,639,1012,613,1103,612,1105,828,1017,829,1016,792,826,789" shape="poly">
+    <area target="" alt="Floors/d_3" title="Floors/d_3" href="" coords="663,440,662,388,900,389,992,386,1111,450,1104,471,1050,457,1050,611,1014,612,1011,524,813,520,813,490,738,488,736,439" shape="poly">
+    <area target="" alt="Floors/d_8" title="Floors/d_8" href="" coords="659,797,662,387,189,388,187,438,224,437,381,434,381,599,222,599,222,434,188,437,187,795,279,795" shape="poly">
+    <area target="" alt="Floors/d_9" title="Floors/d_9" href="" coords="188,378,987,371,1146,99,1144,88,187,89" shape="poly">
+    <area target="" alt="Floors/f_0_1" title="Floors/f_0_1" href="" coords="673,449,728,448,731,495,799,497,804,530,999,534,1002,629,818,629,816,788,671,789" shape="poly">
+    <area target="" alt="lightbox.goToSlide(4)" title="lightbox.goToSlide(4)" href="" coords="32,392,150,448" shape="rect">
+    <area target="" alt="lightbox.goToSlide(0)" title="lightbox.goToSlide(0)" href="" coords="32,333,149,389" shape="rect">
+    <area target="" alt="lightbox.goToSlide(1)" title="lightbox.goToSlide(1)" href="" coords="30,274,151,328" shape="rect">
+    <area target="" alt="lightbox.goToSlide(2)" title="lightbox.goToSlide(2)" href="" coords="32,215,150,268" shape="rect">
+    <area target="" alt="lightbox.goToSlide(3)" title="lightbox.goToSlide(3)" href="" coords="30,152,149,212" shape="rect">
+    <area target="" alt="lightbox.goToSlide(5)" title="lightbox.goToSlide(5)" href="" coords="30,79,150,133" shape="rect">
+</map>

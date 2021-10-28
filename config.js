@@ -247,6 +247,57 @@ let tourConfig = pannellum.viewer('panorama', {
                         customFunc: 'lightbox.goToSlide(5)'
                     }
                 ]
+            }, {
+                'href': 'pictures/Maps/Floor4.png',
+                'type': 'image',
+                "map": [
+                    {
+                        shape: "poly",
+                        cords: "828,642,1012,639,1012,613,1103,612,1105,828,1017,829,1016,792,826,789",
+                        customFunc: 'mapLoadScene("Floors/d_0")'
+                    }, {
+                        shape: "poly",
+                        cords: "663,440,662,388,900,389,992,386,1111,450,1104,471,1050,457,1050,611,1014,612,1011,524,813,520,813,490,738,488,736,439",
+                        customFunc: 'mapLoadScene("Floors/d_3")'
+                    }, {
+                        shape: "poly",
+                        cords: "659,797,662,387,189,388,187,438,224,437,381,434,381,599,222,599,222,434,188,437,187,795,279,795",
+                        customFunc: 'mapLoadScene("Floors/d_8")'
+                    }, {
+                        shape: "poly",
+                        cords: "188,378,987,371,1146,99,1144,88,187,89",
+                        customFunc: 'mapLoadScene("Floors/d_9")'
+                    }, {
+                        shape: "poly",
+                        cords: "673,449,728,448,731,495,799,497,804,530,999,534,1002,629,818,629,816,788,671,789",
+                        customFunc: 'mapLoadScene("Floors/f_0_1")'
+                    }, {
+                        shape: "rect",
+                        cords: "31,392,150,448",
+                        customFunc: 'lightbox.goToSlide(4)'
+                    }, {
+                        shape: "rect",
+                        cords: "31,333,150,389",
+                        customFunc: 'lightbox.goToSlide(0)'
+                    }, {
+                        shape: "rect",
+                        cords: "31,274,150,328",
+                        customFunc: 'lightbox.goToSlide(1)'
+                    }, {
+                        shape: "rect",
+                        cords: "31,215,150,268",
+                        customFunc: 'lightbox.goToSlide(2)'
+                    }, {
+                        shape: "rect",
+                        cords: "31,152,150,212",
+                        customFunc: 'lightbox.goToSlide(3)'
+                    }, {
+                        shape: "rect",
+                        cords: "31,79,150,133",
+                        customFunc: 'lightbox.goToSlide(5)'
+                    },
+                ]
+
             },
         ],
 
@@ -258,14 +309,32 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1,
             "horizonPitch": -1.6,
-            "floor": 0,
+            "floor": 4,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 845,
+                "y": 654
             },
             "panorama": "Floors/d_0.jpg",
             "hotSpots": [
+                {
+                    "pitch": 2.943908904626163,
+                    "yaw": 49.06141684809137,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Floors/d_1"
+                },
+                {
+                    "pitch": -0.9084086833401552,
+                    "yaw": -2.6227369824216566,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Floors/d_2"
+                },
                 {
                     "pitch": -5.254496410296202,
                     "yaw": -176.52289476288365,
@@ -286,11 +355,30 @@ let tourConfig = pannellum.viewer('panorama', {
             "floor": 4,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 1010,
+                "y": 764
             },
             "panorama": "Floors/d_1.jpg",
-            "hotSpots": []
+            "hotSpots": [
+                {
+                    "pitch": 0.5007163569909956,
+                    "yaw": 176.12561756405512,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Floors/d_2"
+                },
+                {
+                    "pitch": -1.3646777806078907,
+                    "yaw": 82.70161976743611,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Floors/d_0"
+                }
+            ]
         },
         "Floors/d_2": {
             "title": "Floors/d_2",
@@ -301,11 +389,39 @@ let tourConfig = pannellum.viewer('panorama', {
             "floor": 4,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 1032,
+                "y": 644
             },
             "panorama": "Floors/d_2.jpg",
-            "hotSpots": []
+            "hotSpots": [
+                {
+                    "pitch": 2.923932969063499,
+                    "yaw": 98.69405243369619,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Floors/d_3"
+                },
+                {
+                    "pitch": -0.016713085587785947,
+                    "yaw": -65.82919851084262,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Floors/d_1"
+                },
+                {
+                    "pitch": -1.9974549387594607,
+                    "yaw": -3.678963852182733,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Floors/d_0"
+                }
+            ]
         },
         "Floors/d_3": {
             "title": "Floors/d_3",
@@ -316,11 +432,30 @@ let tourConfig = pannellum.viewer('panorama', {
             "floor": 4,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 1019,
+                "y": 462
             },
             "panorama": "Floors/d_3.jpg",
-            "hotSpots": []
+            "hotSpots": [
+                {
+                    "pitch": -0.10208209376519761,
+                    "yaw": 65.36827058040348,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Floors/d_2"
+                },
+                {
+                    "pitch": -0.10665431069985942,
+                    "yaw": 170.19214857134136,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Floors/d_4"
+                }
+            ]
         },
         "Floors/d_4": {
             "title": "Floors/d_4",
@@ -331,11 +466,39 @@ let tourConfig = pannellum.viewer('panorama', {
             "floor": 4,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 748,
+                "y": 408
             },
             "panorama": "Floors/d_4.jpg",
-            "hotSpots": []
+            "hotSpots": [
+                {
+                    "pitch": 0.6986403612484295,
+                    "yaw": -41.228665353326164,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Floors/d_5"
+                },
+                {
+                    "pitch": -0.3645377253980169,
+                    "yaw": 142.84550974436365,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Floors/d_3"
+                },
+                {
+                    "pitch": -2.7415612982252915,
+                    "yaw": 26.264446564186983,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Floors/d_9"
+                }
+            ]
         },
         "Floors/d_5": {
             "title": "Floors/d_5",
@@ -346,11 +509,39 @@ let tourConfig = pannellum.viewer('panorama', {
             "floor": 4,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 494,
+                "y": 467
             },
             "panorama": "Floors/d_5.jpg",
-            "hotSpots": []
+            "hotSpots": [
+                {
+                    "pitch": -1.0679790321130924,
+                    "yaw": -76.89482530419554,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Floors/d_7"
+                },
+                {
+                    "pitch": -1.5363507364539633,
+                    "yaw": 107.94961180078167,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Floors/d_4"
+                },
+                {
+                    "pitch": -8.489965397061848,
+                    "yaw": -168.51784024952138,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Floors/d_8"
+                }
+            ]
         },
         "Floors/d_6": {
             "title": "Floors/d_6",
@@ -361,11 +552,21 @@ let tourConfig = pannellum.viewer('panorama', {
             "floor": 4,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 204,
+                "y": 605
             },
             "panorama": "Floors/d_6.jpg",
-            "hotSpots": []
+            "hotSpots": [
+                {
+                    "pitch": -1.5912787435467894,
+                    "yaw": 130.3603349012676,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Floors/d_7"
+                }
+            ]
         },
         "Floors/d_7": {
             "title": "Floors/d_7",
@@ -376,11 +577,30 @@ let tourConfig = pannellum.viewer('panorama', {
             "floor": 4,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 400,
+                "y": 600
             },
             "panorama": "Floors/d_7.jpg",
-            "hotSpots": []
+            "hotSpots": [
+                {
+                    "pitch": -0.17102524970694688,
+                    "yaw": 156.2065290004041,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Floors/d_6"
+                },
+                {
+                    "pitch": -3.13921067833921,
+                    "yaw": -75.35372060232635,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Floors/d_5"
+                }
+            ]
         },
         "Floors/d_8": {
             "title": "Floors/d_8",
@@ -391,11 +611,30 @@ let tourConfig = pannellum.viewer('panorama', {
             "floor": 4,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 519,
+                "y": 617
             },
             "panorama": "Floors/d_8.jpg",
-            "hotSpots": []
+            "hotSpots": [
+                {
+                    "pitch": -4.300423732156467,
+                    "yaw": 140.8704911648814,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Floors/d_5"
+                },
+                {
+                    "pitch": -0.8315659723553616,
+                    "yaw": -94.5923547312633,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Floors/f_0-5_1"
+                }
+            ]
         },
         "Floors/d_9": {
             "title": "Floors/d_9",
@@ -406,11 +645,21 @@ let tourConfig = pannellum.viewer('panorama', {
             "floor": 4,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 645,
+                "y": 215
             },
             "panorama": "Floors/d_9.jpg",
-            "hotSpots": []
+            "hotSpots": [
+                {
+                    "pitch": 0.41284902659456413,
+                    "yaw": 50.12400080072649,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Floors/d_4"
+                }
+            ]
         },
         "Floors/f_0_1": {
             "title": "Floors/f_0_1",
@@ -904,7 +1153,8 @@ let tourConfig = pannellum.viewer('panorama', {
                     "targetYaw": "same",
                     "type": "scene",
                     "text": "",
-                    "sceneId": "Floors/f_1_1"
+                    "sceneId": "Floors/f_1_1",
+                    "div": {}
                 },
                 {
                     "pitch": -27.14360145901973,
@@ -913,7 +1163,18 @@ let tourConfig = pannellum.viewer('panorama', {
                     "targetYaw": "same",
                     "type": "scene",
                     "text": "",
-                    "sceneId": "Floors/f_0_3"
+                    "sceneId": "Floors/f_0_3",
+                    "div": {}
+                },
+                {
+                    "pitch": -7.8009783927044545,
+                    "yaw": 100.78428284079871,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Floors/d_8",
+                    "div": {}
                 }
             ]
         },
