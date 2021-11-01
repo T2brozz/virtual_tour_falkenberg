@@ -152,8 +152,7 @@ let tourConfig = pannellum.viewer('panorama', {
                         shape: "rect",
                         cords: "48,66,168,122",
                         customFunc: 'lightbox.goToSlide(5)'
-                    }
-                ]
+                    },]
             },
             {
                 'href': 'pictures/Maps/Floor2.png',
@@ -192,14 +191,11 @@ let tourConfig = pannellum.viewer('panorama', {
                         shape: "rect",
                         cords: "70,85,189,142",
                         customFunc: 'lightbox.goToSlide(5)'
-                    }
-
-                ]
+                    },]
             },
             {
                 'href': 'pictures/Maps/Floor3.png',
                 'type': 'image',
-
                 "map": [
                     {
                         shape: "rect",
@@ -245,9 +241,9 @@ let tourConfig = pannellum.viewer('panorama', {
                         shape: "rect",
                         cords: "183,127,63,72",
                         customFunc: 'lightbox.goToSlide(5)'
-                    }
-                ]
-            }, {
+                    },]
+            },
+            {
                 'href': 'pictures/Maps/Floor4.png',
                 'type': 'image',
                 "map": [
@@ -273,6 +269,10 @@ let tourConfig = pannellum.viewer('panorama', {
                         customFunc: 'mapLoadScene("Floors/f_0_1")'
                     }, {
                         shape: "rect",
+                        cords: "229,442,373,592",
+                        customFunc: 'mapLoadScene("Rooms/t_1")'
+                    }, {
+                        shape: "rect",
                         cords: "31,392,150,448",
                         customFunc: 'lightbox.goToSlide(4)'
                     }, {
@@ -295,9 +295,57 @@ let tourConfig = pannellum.viewer('panorama', {
                         shape: "rect",
                         cords: "31,79,150,133",
                         customFunc: 'lightbox.goToSlide(5)'
-                    },
-                ]
-
+                    },]
+            },
+            {
+                'href': 'pictures/Maps/Floor5.png',
+                'type': 'image',
+                "map": [
+                    {
+                        shape: "poly",
+                        cords: "308,379,776,377,774,453,660,455,658,861,605,860,604,511,374,512,373,682,304,683,305,507",
+                        customFunc: 'mapLoadScene("Rooms/t_1")'
+                    }, {
+                        shape: "rect",
+                        cords: "307,685,602,865",
+                        customFunc: 'mapLoadScene("Rooms/t_5_w")'
+                    }, {
+                        shape: "rect",
+                        cords: "378,518,602,682",
+                        customFunc: 'mapLoadScene("Rooms/t_4_m")'
+                    }, {
+                        shape: "rect",
+                        cords: "309,167,524,374",
+                        customFunc: 'mapLoadScene("Rooms/t_3")'
+                    }, {
+                        shape: "rect",
+                        cords: "778,111,1143,861",
+                        customFunc: 'mapLoadScene("Rooms/t_6")'
+                    }, {
+                        shape: "rect",
+                        cords: "41,365,161,421",
+                        customFunc: 'lightbox.goToSlide(4)'
+                    }, {
+                        shape: "rect",
+                        cords: "41,306,161,362",
+                        customFunc: 'lightbox.goToSlide(0)'
+                    }, {
+                        shape: "rect",
+                        cords: "41,247,161,302",
+                        customFunc: 'lightbox.goToSlide(1)'
+                    }, {
+                        shape: "rect",
+                        cords: "41,186,161,242",
+                        customFunc: 'lightbox.goToSlide(2)'
+                    }, {
+                        shape: "rect",
+                        cords: "41,124,161,185",
+                        customFunc: 'lightbox.goToSlide(3)'
+                    }, {
+                        shape: "rect",
+                        cords: "41,52,161,107",
+                        customFunc: 'lightbox.goToSlide(5)'
+                    },]
             },
         ],
 
@@ -564,7 +612,18 @@ let tourConfig = pannellum.viewer('panorama', {
                     "targetYaw": "same",
                     "type": "scene",
                     "text": "",
-                    "sceneId": "Floors/d_7"
+                    "sceneId": "Floors/d_7",
+                    "div": {}
+                },
+                {
+                    "pitch": -3.2114328666711227,
+                    "yaw": 42.98526607196732,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Rooms/t_1",
+                    "div": {}
                 }
             ]
         },
@@ -1759,14 +1818,51 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1.6,
             "horizonPitch": -1.8,
-            "floor": 4,
+            "floor": 5,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 384,
+                "y": 446
             },
             "panorama": "Rooms/t_1.jpg",
-            "hotSpots": []
+            "hotSpots": [
+                {
+                    "pitch": -2.2954983802298807,
+                    "yaw": 60.45508763200314,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Floors/d_6"
+                },
+                {
+                    "pitch": -2.335531325420466,
+                    "yaw": -112.58960013000262,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Rooms/t_6"
+                },
+                {
+                    "pitch": -2.9158863489562705,
+                    "yaw": -78.2740252836461,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Rooms/t_2"
+                },
+                {
+                    "pitch": -7.226254923697666,
+                    "yaw": -146.21393913120005,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Rooms/t_3"
+                }
+            ]
         },
         "Rooms/t_2": {
             "title": "Rooms/t_2",
@@ -1774,14 +1870,42 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1,
             "horizonPitch": -3.8,
-            "floor": 4,
+            "floor": 5,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 630,
+                "y": 674
             },
             "panorama": "Rooms/t_2.jpg",
-            "hotSpots": []
+            "hotSpots": [
+                {
+                    "pitch": -4.90892746180066,
+                    "yaw": 105.91609345678057,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Rooms/t_1"
+                },
+                {
+                    "pitch": -5.1706978088034425,
+                    "yaw": -59.73557273111243,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Rooms/t_5_w"
+                },
+                {
+                    "pitch": -7.569498960668712,
+                    "yaw": 93.13671727617088,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Rooms/t_4_m"
+                }
+            ]
         },
         "Rooms/t_3": {
             "title": "Rooms/t_3",
@@ -1789,14 +1913,24 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1.4,
             "horizonPitch": -2.4,
-            "floor": 4,
+            "floor": 5,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 372,
+                "y": 300
             },
             "panorama": "Rooms/t_3.jpg",
-            "hotSpots": []
+            "hotSpots": [
+                {
+                    "pitch": -5.110678491298623,
+                    "yaw": 18.750623823421847,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Rooms/t_1"
+                }
+            ]
         },
         "Rooms/t_4_m": {
             "title": "Rooms/t_4_m",
@@ -1804,14 +1938,24 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 1.4,
             "horizonPitch": -3.2,
-            "floor": 4,
+            "floor": 5,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 437,
+                "y": 580
             },
             "panorama": "Rooms/t_4_m.jpg",
-            "hotSpots": []
+            "hotSpots": [
+                {
+                    "pitch": -1.9888447284018511,
+                    "yaw": 1.1617321931204287,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Rooms/t_2"
+                }
+            ]
         },
         "Rooms/t_5_w": {
             "title": "Rooms/t_5_w",
@@ -1819,14 +1963,24 @@ let tourConfig = pannellum.viewer('panorama', {
             "yaw": 0,
             "horizonRoll": 0.4,
             "horizonPitch": -1.8,
-            "floor": 4,
+            "floor": 5,
             "type": "equirectangular",
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 392,
+                "y": 833
             },
             "panorama": "Rooms/t_5_w.jpg",
-            "hotSpots": []
+            "hotSpots": [
+                {
+                    "pitch": -3.07463040376626,
+                    "yaw": 0.15879702494999037,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Rooms/t_2"
+                }
+            ]
         },
         "Rooms/t_6": {
             "title": "Rooms/t_6",
@@ -1835,13 +1989,23 @@ let tourConfig = pannellum.viewer('panorama', {
             "type": "equirectangular",
             "horizonRoll": 0.4,
             "horizonPitch": -2.4,
-            "floor": 4,
+            "floor": 5,
             "mapCoords": {
-                "x": 0,
-                "y": 0
+                "x": 969,
+                "y": 439
             },
             "panorama": "Rooms/t_6.jpg",
-            "hotSpots": []
+            "hotSpots": [
+                {
+                    "pitch": -0.9240972815907469,
+                    "yaw": 77.02006970421252,
+                    "targetPitch": "same",
+                    "targetYaw": "same",
+                    "type": "scene",
+                    "text": "",
+                    "sceneId": "Rooms/t_1"
+                }
+            ]
         },
         "Rooms/kueche": {
             "title": "Rooms/kueche",
@@ -2597,5 +2761,3 @@ let tourConfig = pannellum.viewer('panorama', {
         }
     }
 });
-
-

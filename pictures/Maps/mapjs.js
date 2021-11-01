@@ -252,6 +252,10 @@ floorout = {
             customFunc: 'mapLoadScene("Floors/f_0_1")'
         },{
             shape: "rect",
+            cords: "229,442,373,592",
+            customFunc: 'mapLoadScene("Rooms/t_1")'
+        },{
+            shape: "rect",
             cords: "31,392,150,448",
             customFunc: 'lightbox.goToSlide(4)'
         },{
@@ -273,6 +277,56 @@ floorout = {
         },{
             shape: "rect",
             cords: "31,79,150,133",
+            customFunc: 'lightbox.goToSlide(5)'
+        },
+    ]
+}
+
+floorgym = {
+    "map": [
+        {
+            shape: "poly",
+            cords: "308,379,776,377,774,453,660,455,658,861,605,860,604,511,374,512,373,682,304,683,305,507",
+            customFunc: 'mapLoadScene("Floors/t_1")'
+        },{
+            shape: "rect",
+            cords: "307,685,602,865",
+            customFunc: 'mapLoadScene("Floors/t_5_w")'
+        },{
+            shape: "rect",
+            cords: "378,518,602,682",
+            customFunc: 'mapLoadScene("Florrs/t_4_m")'
+        },{
+            shape: "rect",
+            cords: "309,167,524,374",
+            customFunc: 'mapLoadScene("Floors/t_3")'
+        },{
+            shape: "rect",
+            cords: "778,111,1143,861",
+            customFunc: 'mapLoadScene("Floors/t_6")'
+        },{
+            shape: "rect",
+            cords: "41,365,161,421",
+            customFunc: 'lightbox.goToSlide(4)'
+        },{
+            shape: "rect",
+            cords: "41,306,161,362",
+            customFunc: 'lightbox.goToSlide(0)'
+        },{
+            shape: "rect",
+            cords: "41,247,161,302",
+            customFunc: 'lightbox.goToSlide(1)'
+        },{
+            shape: "rect",
+            cords: "41,186,161,242",
+            customFunc: 'lightbox.goToSlide(2)'
+        },{
+            shape: "rect",
+            cords: "41,124,161,185",
+            customFunc: 'lightbox.goToSlide(3)'
+        },{
+            shape: "rect",
+            cords: "41,52,161,107",
             customFunc: 'lightbox.goToSlide(5)'
         },
     ]

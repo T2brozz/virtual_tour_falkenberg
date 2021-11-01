@@ -70,6 +70,7 @@
     <area target="" alt="Floors/d_3" title="Floors/d_3" href="" coords="663,440,662,388,900,389,992,386,1111,450,1104,471,1050,457,1050,611,1014,612,1011,524,813,520,813,490,738,488,736,439" shape="poly">
     <area target="" alt="Floors/d_8" title="Floors/d_8" href="" coords="659,797,662,387,189,388,187,438,224,437,381,434,381,599,222,599,222,434,188,437,187,795,279,795" shape="poly">
     <area target="" alt="Floors/d_9" title="Floors/d_9" href="" coords="188,378,987,371,1146,99,1144,88,187,89" shape="poly">
+    <area target="" alt="Floors/t_1" title="Rooms/t_1" href="" coords="229,442,373,592" shape="rect">
     <area target="" alt="Floors/f_0_1" title="Floors/f_0_1" href="" coords="673,449,728,448,731,495,799,497,804,530,999,534,1002,629,818,629,816,788,671,789" shape="poly">
     <area target="" alt="lightbox.goToSlide(4)" title="lightbox.goToSlide(4)" href="" coords="32,392,150,448" shape="rect">
     <area target="" alt="lightbox.goToSlide(0)" title="lightbox.goToSlide(0)" href="" coords="32,333,149,389" shape="rect">
@@ -77,4 +78,18 @@
     <area target="" alt="lightbox.goToSlide(2)" title="lightbox.goToSlide(2)" href="" coords="32,215,150,268" shape="rect">
     <area target="" alt="lightbox.goToSlide(3)" title="lightbox.goToSlide(3)" href="" coords="30,152,149,212" shape="rect">
     <area target="" alt="lightbox.goToSlide(5)" title="lightbox.goToSlide(5)" href="" coords="30,79,150,133" shape="rect">
+</map>
+
+<map name="gym-map">
+    <area target="" alt="Floors/t_1" title="Floors/t_1" href="" coords="308,379,776,377,774,453,660,455,658,861,605,860,604,511,374,512,373,682,304,683,305,507" shape="poly">
+    <area target="" alt="Floors/t_5_w" title="Floors/t_5_w" href="" coords="307,685,602,865" shape="rect">
+    <area target="" alt="Florrs/t_4_m" title="Florrs/t_4_m" href="" coords="378,518,602,682" shape="rect">
+    <area target="" alt="Floors/t_3" title="Floors/t_3" href="" coords="309,167,524,374" shape="rect">
+    <area target="" alt="Floors/t_6" title="Floors/t_6" href="" coords="778,111,1143,861" shape="rect">
+    <area target="" alt="lightbox.goToSlide(4)" title="lightbox.goToSlide(4)" href="" coords="41,365,160,421" shape="rect">
+    <area target="" alt="lightbox.goToSlide(0)" title="lightbox.goToSlide(0)" href="" coords="41,306,161,362" shape="rect">
+    <area target="" alt="lightbox.goToSlide(1)" title="lightbox.goToSlide(1)" href="" coords="41,247,160,302" shape="rect">
+    <area target="" alt="lightbox.goToSlide(2)" title="lightbox.goToSlide(2)" href="" coords="41,186,160,242" shape="rect">
+    <area target="" alt="lightbox.goToSlide(3)" title="lightbox.goToSlide(3)" href="" coords="40,124,161,185" shape="rect">
+    <area target="" alt="lightbox.goToSlide(5)" title="lightbox.goToSlide(5)" href="" coords="40,52,160,107" shape="rect">
 </map>
