@@ -35,8 +35,8 @@ function createCustomHotspot(hotSpotDiv, args) {
     let type = args[1];
     hotSpotDiv.classList.add('custom-tooltip'); //set class
     const imageDiv = document.createElement('img'); //create element
-    imageDiv.setAttribute("width", 25); //size of image
-    imageDiv.setAttribute("height", 25);
+    imageDiv.setAttribute("width", 45); //size of image
+    imageDiv.setAttribute("height", 45);
     if (type === "pic") {
         imageDiv.setAttribute("src", "pictures/icons/image.png") //set path
     } else if (type === "vid") {
