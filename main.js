@@ -1,10 +1,11 @@
 window.onload = function () {
-    // to adjust  the cords for the image map after resizing the window
     $(".pnlm-load-button >p").innerHTML = "Rundgang <br> beginnen"
 
+    // to adjust  the cords for the image map after resizing the window
     window.addEventListener('resize', function () {
         imageMapResize();
     });
+    //highlight image map settings
     $.fn.maphilight.defaults = {
         fill: true,
         fillColor: '000000',
@@ -30,44 +31,50 @@ window.onload = function () {
 }
 
 function createCustomHotspot(hotSpotDiv, args) {
+    //creates Video or Image Hotspot Type = "pic" or "vid"
     let type = args[1];
-    hotSpotDiv.classList.add('custom-tooltip');
-    const imageDiv = document.createElement('img');
-    imageDiv.setAttribute("width", 25);
+    hotSpotDiv.classList.add('custom-tooltip'); //set class
+    const imageDiv = document.createElement('img'); //create element
+    imageDiv.setAttribute("width", 25); //size of image
     imageDiv.setAttribute("height", 25);
     if (type === "pic") {
-        imageDiv.setAttribute("src", "pictures/icons/image.png")
+        imageDiv.setAttribute("src", "pictures/icons/image.png") //set path
     } else if (type === "vid") {
-        imageDiv.setAttribute("src", "pictures/icons/video.png")
+        imageDiv.setAttribute("src", "pictures/icons/video.png") //set path
     }
-    hotSpotDiv.appendChild(imageDiv);
+    hotSpotDiv.appendChild(imageDiv); //add to html
 }
 
 let lightbox;
 
 function openGallery(div, args) {
-    console.log(args)
+    /*Open Normal Gallery*/
     lightbox = new GLightbox({
+        //get gallery from config and set it as elements
         elements: tourConfig.getConfig()["scenes"][tourConfig.getScene()]["hotSpots"][args]["gallery"]
     });
     lightbox.on('close', (_) => {
+        //on close destroy it
         lightbox.destroy()
-        console.log(lightbox)
     });
     lightbox.open();
 }
 
-function createMap(slide, name) {
+function createImageMap(slide, name) {
+    // add Image map to image and append to html
     let mapConfig = slide["slideConfig"]["map"]
     if (mapConfig !== undefined) {
+        //set name and set it as att
         let mapName = name + String(slide["index"])
         let map = document.createElement("map")
         map.setAttribute("name", mapName)
 
+        //set class and add map element
         slide["slide"].querySelector(".gslide-media").appendChild(map)
         slide["slide"].querySelector(".gslide-media >img").setAttribute("usemap", "#" + mapName)
         slide["slide"].querySelector(".gslide-media >img").setAttribute("class", "map")
 
+        //create area element and append it to map element for each area element in config
         for (let i = 0; i < mapConfig.length; i++) {
             let area = document.createElement("area")
             area.setAttribute("shape", mapConfig[i]["shape"])
@@ -80,35 +87,36 @@ function createMap(slide, name) {
 }
 
 function getBase64Image(imageSrc, coords, _callback) {
-    // Create an empty canvas element
+    // manipulate image to show coordinates
     let canvas = document.createElement("canvas");
     let img = new Image();
-    let offset =48 // size of here i am icon
+    let offset = 48 // size of here i am icon
     img.src = imageSrc;
     img.onload = function () {
         canvas.width = img.width;
         canvas.height = img.height;
-        console.log(canvas.height,canvas.width)
+        //console.log(canvas.height,canvas.width)
         let ctx = canvas.getContext("2d");
         ctx.drawImage(img, 0, 0);
         //Image manipulation
-        let markerPic = new Image();
+        let markerPic = new Image(); //image of current position
         markerPic.src = "pictures/icons/here_i_am.png";
         markerPic.onload = function () {
-            ctx.drawImage(markerPic, coords.x-offset/2, coords.y-offset);
-            let imageBase64 = canvas.toDataURL("image/png");
-            _callback(imageBase64);
+            ctx.drawImage(markerPic, coords.x - offset / 2, coords.y - offset);  //offset so that coords are on the tip of the icon
+            let imageBase64 = canvas.toDataURL("image/png"); //convert to base64
+            _callback(imageBase64); // return image
         }
     }
 }
 
 function openMap(div, args) {
-    let mapElements = JSON.parse(JSON.stringify(tourConfig.getConfig()["default"]["map"]));
-    let floor = tourConfig.getConfig()["scenes"][tourConfig.getScene()]["floor"]
-    let coords = tourConfig.getConfig()["scenes"][tourConfig.getScene()]["mapCoords"]
-    getBase64Image(mapElements[floor]["href"], coords, function (manipulatedImage) {
+    //opens the map and creates image map and show where you currently are
+    let mapElements = JSON.parse(JSON.stringify(tourConfig.getConfig()["default"]["map"])); // get element from the config file and copy it to avoid copy by reference
+    let floor = tourConfig.getConfig()["scenes"][tourConfig.getScene()]["floor"] // get current floor
+    let coords = tourConfig.getConfig()["scenes"][tourConfig.getScene()]["mapCoords"] // get current position
+    getBase64Image(mapElements[floor]["href"], coords, function (manipulatedImage) { //manipulate image to show coordinates
         mapElements[floor]["href"] = manipulatedImage;
-        lightbox = new GLightbox({
+        lightbox = new GLightbox({ //light box settings
             zoomable: false,
             draggable: false,
             touchNavigation: false,
@@ -116,22 +124,25 @@ function openMap(div, args) {
             elements: mapElements
         });
         lightbox.on('close', (_) => {
-            lightbox.destroy()
+            lightbox.destroy() //on close destroy it
         });
         lightbox.on("open", () => {
-            $(".gnext").remove()
+            $(".gnext").remove() // remove next and previous button
             $(".gprev").remove()
         })
         lightbox.on('slide_after_load', (slide) => {
-            createMap(slide, "lightbox");
-            $('.map').maphilight();
-            imageMapResize()
-            //$( ".gslide-media > map:nth-child(2) > area:nth-child(1)" ).tooltip({ show: { effect: "blind", duration: 800 } });
+            // after slide load or on slide change
+            // create image map
+            createImageMap(slide, "lightbox");
+            $('.map').maphilight(); // activate highlight
+            imageMapResize(); //resize image map to size of screen
         });
-        lightbox.openAt(floor);
+        lightbox.openAt(floor); // open map
     })
 }
-function mapLoadScene(scene){
+
+function mapLoadScene(scene) {
+    // load scene and close lightbox
     tourConfig.loadScene(scene);
     lightbox.close()
 }
